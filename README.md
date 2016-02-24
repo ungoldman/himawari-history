@@ -24,14 +24,10 @@ brew install graphicsmagick
 npm install himawari-history
 ```
 
-If you want to use the video scripts in `examples`, you'll also need [ffmpeg](https://www.ffmpeg.org), which can also be installed with homebrew.
+If you want to use the video scripts in `examples`, you'll also need [`ffmpeg`](https://www.ffmpeg.org), which can also be installed with homebrew.
 
 ```
 brew ffmpeg
-```
-
-```
-npm install himawari-history
 ```
 
 ## Usage
