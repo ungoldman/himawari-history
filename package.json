@@ -1,13 +1,11 @@
 {
   "name": "himawari-history",
-  "version": "0.0.0",
   "description": "Download all Himawari 8 images in a date range",
-  "main": "index.js",
-  "scripts": {
-    "test": "standard"
-  },
+  "version": "0.0.0",
   "author": "Nate Goldman <nate@ngoldman.me> (http://ngoldman.me/)",
-  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngoldman/himawari-history/issues"
+  },
   "dependencies": {
     "async": "^1.5.2",
     "himawari": "^1.3.2",
@@ -15,5 +13,24 @@
   },
   "devDependencies": {
     "standard": "^6.0.7"
+  },
+  "homepage": "https://github.com/ngoldman/himawari-history#readme",
+  "keywords": [
+    "download",
+    "himawari",
+    "history",
+    "images",
+    "infrared",
+    "satellite",
+    "visible"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngoldman/himawari-history.git"
+  },
+  "scripts": {
+    "test": "standard"
   }
 }
