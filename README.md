@@ -43,15 +43,15 @@ var hh = require('himawari-history')
 var moment = require('moment')
 
 hh({
-  start: new Date(moment().subtract(1, 'days').format())
-  end: new Date()
-  interval: 10
-  outdir: path.resolve('images')
-  debug: false
-  concurrency: 10
-  zoom: 1
-  infrared: false
-  parallel: false
+  start: new Date(moment().subtract(1, 'days').format()),
+  end: new Date(),
+  interval: 10,
+  outdir: path.resolve('images'),
+  debug: false,
+  concurrency: 10,
+  zoom: 1,
+  infrared: false,
+  parallel: false,
   onFileSuccess: function (outfile) {
     console.log(`✅  ${outfile}`)
   }
