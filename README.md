@@ -89,6 +89,12 @@ Contributions welcome! Please read the [contributing guidelines](CONTRIBUTING.md
 
 Example video scripts are based on the [himawari.js](https://github.com/jakiestfu/himawari.js) video script.
 
+## See Also
+
+- [hi8](https://github.com/ungoldman/hi8): See Earth from Himawari-8 on your desktop every 10 minutes.
+- [himawari-bg](https://github.com/ungoldman/himawari-bg): Set the latest image from Himawari 8 as your desktop background.
+- [himawari-urls](https://github.com/ungoldman/himawari-urls): Get URLs for Himawari 8 image tiles based on a given date.
+
 ## License
 
 [ISC](LICENSE.md)
