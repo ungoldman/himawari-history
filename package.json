@@ -2,9 +2,9 @@
   "name": "himawari-history",
   "description": "Download all Himawari 8 images in a date range.",
   "version": "1.0.0-alpha",
-  "author": "Nate Goldman <nate@ngoldman.me> (http://ngoldman.me/)",
+  "author": "Nate Goldman <ungoldman@gmail.com> (https://ungoldman.com)",
   "bugs": {
-    "url": "https://github.com/ngoldman/himawari-history/issues"
+    "url": "https://github.com/ungoldman/himawari-history/issues"
   },
   "dependencies": {
     "async": "^2.6.0",
@@ -14,7 +14,7 @@
   "devDependencies": {
     "standard": "^10.0.3"
   },
-  "homepage": "https://github.com/ngoldman/himawari-history#readme",
+  "homepage": "https://github.com/ungoldman/himawari-history#readme",
   "keywords": [
     "download",
     "himawari",
@@ -28,7 +28,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ngoldman/himawari-history.git"
+    "url": "git+https://github.com/ungoldman/himawari-history.git"
   },
   "scripts": {
     "test": "standard"
