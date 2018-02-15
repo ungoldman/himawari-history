@@ -1,9 +1,10 @@
 var path = require('path')
 var mkdirp = require('mkdirp')
 
-var out = path.resolve('images', 'infrared')
-var video = path.resolve('videos', 'infrared', 'history.mp4')
+var out = path.join(__dirname, 'images', 'infrared')
+var video = path.join(__dirname, 'videos', 'infrared', 'history.mp4')
 
+mkdirp.sync(out)
 mkdirp.sync(path.dirname(video))
 
 var cmd = `find ${out} -name *.jpg -print0 | xargs -0 cat | ffmpeg -f image2pipe -vcodec mjpeg -analyzeduration 100M -probesize 100M -i - -vcodec libx264 ${video}`
