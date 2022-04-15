@@ -1,5 +1,5 @@
 const async = require('async')
-const himawari = require('himawari')
+const himawari = require('@ungoldman/himawari')
 const mkdirp = require('mkdirp')
 const moment = require('moment')
 const fs = require('fs')

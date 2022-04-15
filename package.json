@@ -7,8 +7,8 @@
     "url": "https://github.com/ungoldman/himawari-history/issues"
   },
   "dependencies": {
+    "@ungoldman/himawari": "^2.0.0",
     "async": "^2.6.0",
-    "himawari": "^1.3.2",
     "mkdirp": "^0.5.1"
   },
   "devDependencies": {
