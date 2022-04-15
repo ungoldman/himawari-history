@@ -1,7 +1,7 @@
 {
   "name": "himawari-history",
   "description": "Download all Himawari 8 images in a date range.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Nate Goldman <ungoldman@gmail.com> (https://ungoldman.com)",
   "bugs": {
     "url": "https://github.com/ungoldman/himawari-history/issues"
