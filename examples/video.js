@@ -7,7 +7,7 @@ const video = path.join(__dirname, 'videos', 'visible', 'history.mp4')
 mkdirp.sync(out)
 mkdirp.sync(path.dirname(video))
 
-const cmd = `find ${out} -name *.jpg -print0 | xargs -0 cat | ffmpeg -f image2pipe -vcodec mjpeg -analyzeduration 100M -probesize 100M -i - -vcodec libx264 ${video}`
+const cmd = `find ${out} -name *.jpg | sort | tr '\\n' '\\0' | xargs -0 cat | ffmpeg -f image2pipe -vcodec mjpeg -analyzeduration 100M -probesize 100M -i - -vcodec libx264 ${video}`
 
 // Pipe all images to ffmpeg and create a video. Simple as that!
 require('child_process').exec(cmd, function (err, res) {
