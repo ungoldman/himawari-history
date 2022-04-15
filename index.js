@@ -1,27 +1,27 @@
-var async = require('async')
-var himawari = require('himawari')
-var mkdirp = require('mkdirp')
-var moment = require('moment')
-var fs = require('fs')
-var path = require('path')
+const async = require('async')
+const himawari = require('himawari')
+const mkdirp = require('mkdirp')
+const moment = require('moment')
+const fs = require('fs')
+const path = require('path')
 
-var INTERVAL = 10 // Time interval (in minutes)
-var OUTDIR = path.resolve('images') // image output directory
-var CONCURRENCY = 10
-var ZOOM = 1
+const INTERVAL = 10 // Time interval (in minutes)
+const OUTDIR = path.resolve('images') // image output directory
+const CONCURRENCY = 10
+const ZOOM = 1
 
 // string coercion shortcut
 function str (x) { return '' + x }
 function pad (x) {
-  var y = str(x)
+  let y = str(x)
   while (y.length < 2) y = '0' + y
   return y
 }
 
 // Create a list of dates from `start` to `end` at a frequency of `interval` minutes
 function run (opts, callback) {
-  var NOW = new Date()
-  var YESTERDAY = new Date(moment().subtract(1, 'days').format())
+  const NOW = new Date()
+  const YESTERDAY = new Date(moment().subtract(1, 'days').format())
 
   opts = opts || {}
   opts.start = opts.start || YESTERDAY
@@ -34,17 +34,17 @@ function run (opts, callback) {
   opts.infrared = opts.infrared || false
   opts.parallel = opts.parallel || false
 
-  var diffMs = opts.end - opts.start
-  var diffSeconds = Math.floor(diffMs / 1000)
-  var diffMinutes = Math.floor(diffSeconds / 60)
-  var intervals = Math.floor(diffMinutes / opts.interval)
-  var minutes = 0
+  const diffMs = opts.end - opts.start
+  const diffSeconds = Math.floor(diffMs / 1000)
+  const diffMinutes = Math.floor(diffSeconds / 60)
+  const intervals = Math.floor(diffMinutes / opts.interval)
+  let minutes = 0
 
   // set up worker queue
-  var dates = async.queue(function (date, queueCallback) {
-    var filename = date.getTime()
+  const dates = async.queue(function (date, queueCallback) {
+    const filename = date.getTime()
 
-    var outfile = path.join(opts.outdir,
+    const outfile = path.join(opts.outdir,
       opts.infrared ? 'infrared' : 'visible',
       str(opts.zoom),
       str(date.getUTCFullYear()),
@@ -83,8 +83,8 @@ function run (opts, callback) {
     if (callback) return callback()
   }
 
-  for (var i = 0; i <= intervals; i++) {
-    var date = new Date(opts.start)
+  for (let i = 0; i <= intervals; i++) {
+    const date = new Date(opts.start)
     date.setMinutes(minutes)
     dates.push(date)
     minutes += opts.interval

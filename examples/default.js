@@ -1,4 +1,4 @@
-var hh = require('../')
+const hh = require('../')
 
 hh({
   debug: true,

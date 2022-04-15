@@ -1,7 +1,7 @@
-var hh = require('../')
-var moment = require('moment')
+const hh = require('../')
+const moment = require('moment')
 
-var start = new Date(moment().subtract(7, 'days').format())
+const start = new Date(moment().subtract(7, 'days').format())
 
 hh({
   start: start,
