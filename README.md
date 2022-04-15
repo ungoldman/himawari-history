@@ -3,14 +3,11 @@
 Download all Himawari 8 images in a date range.
 
 [![npm][1]][2]
-[![standard][5]][6]
-[![downloads][7]][2]
+[![downloads][3]][2]
 
-[1]: https://img.shields.io/npm/v/himawari-history.svg?style=flat-square
+[1]: https://img.shields.io/npm/v/himawari-history.svg
 [2]: https://www.npmjs.com/package/himawari-history
-[5]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
-[6]: http://standardjs.com/
-[7]: https://img.shields.io/npm/dm/himawari-history.svg?style=flat-square
+[3]: https://img.shields.io/npm/dm/himawari-history.svg
 
 ## Install
 
