@@ -9,7 +9,7 @@
   "dependencies": {
     "@ungoldman/himawari": "^2.0.0",
     "async": "^3.2.3",
-    "mkdirp": "^0.5.1"
+    "mkdirp": "^1.0.4"
   },
   "devDependencies": {
     "standard": "^16.0.4"
